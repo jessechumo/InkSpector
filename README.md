@@ -14,6 +14,8 @@ Instead of treating signature classification as a binary task (real vs forged), 
 - Each branch processes an input signature image and learns deep feature representations
 - The model uses **L1 distance** to compare the features of a test signature and a known genuine sample
 - Final prediction: **same (genuine)** or **different (forged)**
+![image](https://github.com/user-attachments/assets/41a50222-23cd-401d-8ea3-bdf201a6c669)
+
 
 ## 🧾 Dataset
 
@@ -36,10 +38,17 @@ The dataset used is [Handwritten Signatures | Genuine and Forged](https://www.ka
 - `NFI-02103021`: Person 021 signed their own signature → **genuine**
 
 ## 🧪 Performance
+![image](https://github.com/user-attachments/assets/bfed7cfc-fc20-420b-8399-b0ad179e0423)
+
 
 - **Training Accuracy:** 99.46%
 - **Validation Accuracy:** 97.14%
 - Custom **confusion heatmaps** and model visualization included
+- ![image](https://github.com/user-attachments/assets/ee5a88bf-0dd3-4943-8e2e-f2e92bd70d06)
+- ![image](https://github.com/user-attachments/assets/ec47b40d-0393-41b8-9448-0d2597691863)
+
+![image](https://github.com/user-attachments/assets/cf9b3265-46e8-4163-9298-f566009b193d)
+
 
 ## 📂 Project Structure
 
