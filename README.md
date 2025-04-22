@@ -43,10 +43,14 @@ The dataset used is [Handwritten Signatures | Genuine and Forged](https://www.ka
 
 - **Training Accuracy:** 99.46%
 - **Validation Accuracy:** 97.14%
-- Custom **confusion heatmaps** and model visualization included
-- ![image](https://github.com/user-attachments/assets/ee5a88bf-0dd3-4943-8e2e-f2e92bd70d06)
-- ![image](https://github.com/user-attachments/assets/ec47b40d-0393-41b8-9448-0d2597691863)
+- Custom **confusion heatmaps** and model visualization included 
+<p float="left">
+  <img src="https://github.com/user-attachments/assets/e78fc04a-f8d3-4541-ad36-12934e229c74" width="45%" />
+  <img src="https://github.com/user-attachments/assets/99e069de-c534-404c-8044-3081c7004024" width="45%" />
+</p>
 
+
+  - The model in action below.
 ![image](https://github.com/user-attachments/assets/cf9b3265-46e8-4163-9298-f566009b193d)
 
 
@@ -57,25 +61,36 @@ Inkspector/
 ├── sample_Signature/
 │   ├── genuine/
 │   └── forged/
-├── dasv.ipynb             # Main notebook
+├── dasv.ipynb           # Main notebook
 ├── Signature Forgery Detection.pptx
-├── environment.yml        # Optional for reproducibility
-├── requirements.txt       # Python dependencies
+├── requirements.txt       
 └── README.md
 ```
 
 ## 🚀 How to Run
 
-1. Clone this repo
-2. Install dependencies
+1. **Clone this repo**
+```bash
+git clone https://github.com/your-username/inkspector.git
+cd inkspector
+```
+
+2. **Create and activate a virtual environment**
+```bash
+python -m venv venv
+source venv/bin/activate   # For Linux/macOS
+venv\Scripts\activate      # For Windows
+```
+
+3. **Install dependencies**
 ```bash
 pip install -r requirements.txt
 ```
-3. Run the notebook
+
+4. **Run the notebook**
 ```bash
 jupyter notebook dasv.ipynb
 ```
-
 ## ✅ Features
 
 - Siamese architecture for pairwise signature verification
