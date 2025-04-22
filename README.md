@@ -1,16 +1,12 @@
 # 🖋️ Inkspector: Signature Forgery Detection with Deep Learning
 
-Inkspector is a deep learning project that detects forged handwritten signatures using a **Siamese Convolutional Neural Network (Siamese CNN)**. By comparing a test signature against a known genuine sample, the model learns to distinguish subtle differences between authentic and forged signatures.
-
----
+Inkspector is a deep learning project that detects forged handwritten signatures using a Siamese Convolutional Neural Network (Siamese CNN). By comparing a test signature against a known genuine sample, the model learns to distinguish subtle differences between authentic and forged signatures.
 
 ## 📌 Project Overview
 
 Forgery detection is a critical problem in banking, legal, and academic sectors. Traditional visual inspection methods are subjective and error-prone. Inkspector leverages deep learning to automate and improve the accuracy of signature verification.
 
-Instead of treating signature classification as a binary task (real vs forged), Inkspector uses a **pairwise comparison** approach: it determines whether two signatures come from the same person.
-
----
+Instead of treating signature classification as a binary task (real vs forged), Inkspector uses a pairwise comparison approach: it determines whether two signatures come from the same person.
 
 ## 🧠 Model Architecture
 
@@ -19,8 +15,6 @@ Instead of treating signature classification as a binary task (real vs forged), 
 - The model uses **L1 distance** to compare the features of a test signature and a known genuine sample
 - Final prediction: **same (genuine)** or **different (forged)**
 
----
-
 ## 🧾 Dataset
 
 The dataset used is [Handwritten Signatures | Genuine and Forged](https://www.kaggle.com/datasets/divyanshrai/handwritten-signatures) from Kaggle.
@@ -28,28 +22,24 @@ The dataset used is [Handwritten Signatures | Genuine and Forged](https://www.ka
 - 150 genuine + 150 forged signatures (300 total)
 - Format: Grayscale `.png` images
 
-**Dataset Structure:**  
-- `genuine/`: 5 samples each from 30 individuals  
+**Dataset Structure:**
+- `genuine/`: 5 samples each from 30 individuals
 - `forged/`: 5 forged samples for the same 30 individuals
 
-**File Naming Convention:** `NFI-XXXYYZZZ`  
-- `XXX`: ID of the person who performed the signature  
-- `YY`: Sample number  
-- `ZZZ`: ID of the person the signature claims to represent  
+**File Naming Convention:** `NFI-XXXYYZZZ`
+- `XXX`: ID of the person who performed the signature
+- `YY`: Sample number
+- `ZZZ`: ID of the person the signature claims to represent
 
-**Examples:**  
-- `NFI-00602023`: Person 006 forged a signature of person 023 → **forged**  
+**Examples:**
+- `NFI-00602023`: Person 006 forged a signature of person 023 → **forged**
 - `NFI-02103021`: Person 021 signed their own signature → **genuine**
-
----
 
 ## 🧪 Performance
 
-- **Training Accuracy:** 99.46%  
-- **Validation Accuracy:** 97.14%  
+- **Training Accuracy:** 99.46%
+- **Validation Accuracy:** 97.14%
 - Custom **confusion heatmaps** and model visualization included
-
----
 
 ## 📂 Project Structure
 
@@ -65,22 +55,17 @@ Inkspector/
 └── README.md
 ```
 
----
-
 ## 🚀 How to Run
 
-1. Clone this repo  
-2. Install dependencies  
+1. Clone this repo
+2. Install dependencies
 ```bash
 pip install -r requirements.txt
 ```
-
-3. Run the notebook  
+3. Run the notebook
 ```bash
 jupyter notebook dasv.ipynb
 ```
-
----
 
 ## ✅ Features
 
@@ -90,8 +75,6 @@ jupyter notebook dasv.ipynb
 - Clean preprocessing with padding, normalization, and resizing
 - Compatible across Linux (CPU) and Windows (GPU)
 
----
-
 ## 🔮 Future Work
 
 - Expand dataset with real-world samples
@@ -99,8 +82,6 @@ jupyter notebook dasv.ipynb
 - Experiment with deeper or hybrid models
 - Deploy as a web app for real-time signature verification
 
----
-
 ## 🧑‍💻 Credits
 
-- Dataset: [Divyansh Rai on Kaggle](https://www.kaggle.com/datasets/divyanshrai/handwritten-signatures)  
+- Dataset: [Divyansh Rai on Kaggle](https://www.kaggle.com/datasets/divyanshrai/handwritten-signatures)
