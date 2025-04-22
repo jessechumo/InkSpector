@@ -71,7 +71,7 @@ Inkspector/
 
 1. **Clone this repo**
 ```bash
-git clone https://github.com/your-username/inkspector.git
+git clone https://github.com/jessechumo/inkspector.git
 cd inkspector
 ```
 
